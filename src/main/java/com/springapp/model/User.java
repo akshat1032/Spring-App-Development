@@ -20,4 +20,11 @@ public class User {
 		this.lastName = lastName;
 	}
 
+	@Override
+	public String toString() {
+		String user = (firstName != null) ? firstName + " " : "";
+		user += (lastName != null) ? lastName : "";
+		return user.trim();
+	}
+
 }
